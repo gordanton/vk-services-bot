@@ -1,0 +1,12 @@
+venv/
+.venv/
+.env
+.git/
+.vkbottle/
+__pycache__/
+*.py[cod]
+*.log
+leads.jsonl
+docs/
+.idea/
+.vscode/

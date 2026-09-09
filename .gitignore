@@ -1,0 +1,24 @@
+# Секреты
+.env
+
+# Заявки и отзывы с контактами клиентов
+leads.jsonl
+
+# Логи запуска
+*.log
+
+# Виртуальное окружение
+venv/
+.venv/
+
+# Состояние LongPoll (создаётся при skip_old_events=False)
+.vkbottle/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# IDE
+.idea/
+.vscode/

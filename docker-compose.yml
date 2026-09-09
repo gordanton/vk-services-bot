@@ -1,0 +1,14 @@
+services:
+  bot:
+    build: .
+    container_name: vk-services-bot
+    env_file:
+      - .env
+    environment:
+      LEADS_FILE: /app/data/leads.jsonl
+    volumes:
+      - bot-data:/app/data
+    restart: unless-stopped
+
+volumes:
+  bot-data:

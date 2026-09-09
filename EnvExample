@@ -1,0 +1,29 @@
+# Токен доступа сообщества ВКонтакте.
+# Настройки сообщества -> Работа с API -> Ключи доступа.
+# Нужны права: "Сообщения сообщества" и "Управление сообществом".
+VK_TOKEN=vk1.a.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+# Ваш числовой VK id: на него бот присылает заявки и отзывы.
+# Если не задать, заявки будут только записываться в leads.jsonl.
+ADMIN_ID=12345678
+
+# Ключ API ProxyAPI (начинается с sk-).
+# Личный кабинет: https://console.proxyapi.ru -> Ключи API
+PROXYAPI_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+# Базовый адрес ProxyAPI для официального SDK openai.
+PROXYAPI_BASE_URL=https://api.proxyapi.ru/v1
+
+# Модель. Идентификатор надёжнее писать целиком: вендор/название.
+AI_MODEL=openai/gpt-4.1-mini
+
+# Необязательные настройки генерации.
+AI_TEMPERATURE=0.7
+AI_MAX_TOKENS=500
+AI_TIMEOUT=60
+
+# Сколько последних пар "вопрос-ответ" помнить в каждом диалоге.
+HISTORY_LIMIT=10
+
+# Куда писать заявки и отзывы. В docker-compose задаётся само.
+# LEADS_FILE=leads.jsonl
